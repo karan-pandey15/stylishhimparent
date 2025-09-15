@@ -211,7 +211,7 @@ const slides = [
       buttonText: 'Shop Now'
     },
     {
-      image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUX8SqDsEFfu6OAwvz9sEsnzzuRL5gtu7_8Q2gtTi8pKPMvBH3X1THZm_e3E7pr44PdA8&usqp=CAU',
       title: 'Fine Tea Collection',
       description: 'Premium tea varieties sourced from the finest gardens',
       buttonText: 'Browse Teas'
@@ -223,7 +223,7 @@ const slides = [
       buttonText: 'Shop Dairy'
     },
     {
-      image: 'https://images.unsplash.com/photo-1549007994-cb92caebd54b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGHliGmCXGraybLhGH5SG3crQp8htFX4lgh8-iH44MOh_-HIZ_4fjDirr-VVcGmAPSWY&usqp=CAU',
       title: 'Delicious Chocolate',
       description: 'Premium chocolates and cocoa products for every taste',
       buttonText: 'Indulge Now'
