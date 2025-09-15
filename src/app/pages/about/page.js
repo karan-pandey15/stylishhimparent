@@ -371,14 +371,14 @@ const About = () => {
             {/* Flag background */}
             <img
               src={member.flag}
-              alt={`${member.location} flag`}
+            
               className="absolute inset-0 w-full h-full object-cover"
             />
 
             {/* Profile image with slight opacity or blend */}
             <img
               src={`https://via.placeholder.com/150`} // Replace with actual team member images
-              alt={member.name}
+         
               className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
             />
           </div>
