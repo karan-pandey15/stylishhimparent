@@ -384,7 +384,7 @@ const About = () => {
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            Ready to Partner With Us?
+            Ready to Partner With Us?""
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Join thousands of satisfied clients worldwide who trust Stylish Him Exim for their global trading needs.
