@@ -199,7 +199,7 @@ const slides = [
       buttonText: 'Contact Us'
     },
     {
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      image: 'https://img.freepik.com/free-photo/shipping-industry-delivering-cargo-large-container-ship-generative-ai_188544-9112.jpg?semt=ais_incoming&w=740&q=80',
       title: 'Global Shipping 🚢',
       description: 'Worldwide maritime transport and logistics services',
       buttonText: 'Track Shipment'
