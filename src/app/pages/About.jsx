@@ -350,25 +350,32 @@ const About = () => {
 
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       {[
-        { name: "Omar Rahman", position: "Regional Sales Officer", location: "Dubai" },
-        { name: "Nguyen Thanh Hai", position: "Regional Sales Officer", location: "Vietnam" },
-        { name: "Somchai Rattanakorn", position: "Regional Sales Officer", location: "Thailand" },
-        { name: "Andry Rakoto", position: "Regional Sales Officer", location: "Madagascar" },
-        { name: "Jean Mbemba", position: "Regional Sales Officer", location: "Congo" },
-        { name: "David Mwangi", position: "Regional Sales Officer", location: "Kenya" },
-        { name: "Anil Beeharry", position: "Regional Sales Officer", location: "Mauritius" },
+        { name: "Omar Rahman", position: "Regional Sales Officer", location: "Dubai", flag: "https://flagcdn.com/w40/ae.png" },
+        { name: "Nguyen Thanh Hai", position: "Regional Sales Officer", location: "Vietnam", flag: "https://flagcdn.com/w40/vn.png" },
+        { name: "Somchai Rattanakorn", position: "Regional Sales Officer", location: "Thailand", flag: "https://flagcdn.com/w40/th.png" },
+        { name: "Andry Rakoto", position: "Regional Sales Officer", location: "Madagascar", flag: "https://flagcdn.com/w40/mg.png" },
+        { name: "Jean Mbemba", position: "Regional Sales Officer", location: "Congo", flag: "https://flagcdn.com/w40/cg.png" },
+        { name: "David Mwangi", position: "Regional Sales Officer", location: "Kenya", flag: "https://flagcdn.com/w40/ke.png" },
+        { name: "Anil Beeharry", position: "Regional Sales Officer", location: "Mauritius", flag: "https://flagcdn.com/w40/mu.png" },
       ].map((member, index) => (
         <div
           key={index}
           className="text-center group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
         >
-          <div className="relative mb-6">
+          <div className="relative mb-6 w-32 h-32 mx-auto">
             <img
               src={`https://via.placeholder.com/150`} // Replace with actual team member images
               alt={member.name}
               className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300"
             />
             <div className="absolute inset-0 w-32 h-32 rounded-full mx-auto bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+            
+            {/* Flag badge */}
+            <img
+              src={member.flag}
+              alt={`${member.location} flag`}
+              className="absolute bottom-1 right-1 w-8 h-8 rounded-full border-2 border-white shadow-md"
+            />
           </div>
           <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
           <p className="text-blue-600 font-medium mb-1">{member.position}</p>
