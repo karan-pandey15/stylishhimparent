@@ -60,6 +60,62 @@ const About = () => {
     { number: '100+', label: 'Tons Traded' }
   ];
 
+  const strengths = [
+    {
+      icon: '🌍',
+      title: 'One Partner For Global Shipments',
+      description: 'Streamlined operations across all international markets with centralized coordination and local expertise.'
+    },
+    {
+      icon: '📍',
+      title: 'Local Market Knowledge In Every Region',
+      description: 'Deep understanding of regional markets across Asia and Africa with on-ground presence and insights.'
+    },
+    {
+      icon: '✅',
+      title: 'Compliance You Can Trust',
+      description: 'Expert navigation of international regulations and customs requirements ensuring smooth operations.'
+    },
+    {
+      icon: '🤝',
+      title: 'Dedicated Regional Support',
+      description: 'Personalized support teams in each region providing 24/7 assistance and local language support.'
+    }
+  ];
+
+  const services = [
+    {
+      icon: '🚢',
+      title: 'Export & Procurement',
+      description: 'Global Sourcing With Verified Quality',
+      details: 'Comprehensive export and import services with rigorous quality verification processes.'
+    },
+    {
+      icon: '📋',
+      title: 'Customs & Compliance',
+      description: 'Smooth Clearance Everywhere',
+      details: 'Expert customs clearance and regulatory compliance services across all international markets.'
+    },
+    {
+      icon: '🚛',
+      title: 'Freight & Logistics',
+      description: 'Flexible Multi-Route Solutions',
+      details: 'Optimized shipping routes and logistics solutions tailored to your specific requirements.'
+    },
+    {
+      icon: '🎯',
+      title: 'Market Access',
+      description: 'On-The-Ground Support For Local Entry',
+      details: 'Strategic market entry support with local partnerships and regulatory guidance.'
+    },
+    {
+      icon: '🔍',
+      title: 'Quality Checks',
+      description: 'Sampling And Inspection Services',
+      details: 'Comprehensive quality assurance through professional sampling and inspection services.'
+    }
+  ];
+
   const values = [
     {
       icon: '🎯',
@@ -118,74 +174,121 @@ const About = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center bg-no-repeat opacity-20"></div>
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            About <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">StylishHim Pvt Ltd.</span>
+            About <span className="bg-gradient-to-r from-blue-300 to-white bg-clip-text text-transparent">Stylish Him Exim</span>
           </h1>
           <p className="text-xl lg:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Connecting global markets with premium commodities for over 25 years. Your trusted partner in international trade.
+            Your Global Trade Partner With Headquarters In Delhi And A Strong Regional Presence Across Asia And Africa
           </p>
         </div>
       </section>
 
-      {/* Company Overview */}
-      <section className="py-16 lg:py-24">
+      {/* Who We Are Section */}
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                Our Story & Mission
-              </h2>
-              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Founded in 1995, Global Trading Co. has grown from a small commodity trading company to a worldwide leader in international trade. We specialize in sourcing, processing, and delivering premium quality products across multiple industries.
-              </p>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Our mission is to bridge global markets by providing reliable access to high-quality commodities while maintaining the highest standards of integrity, sustainability, and customer service. We believe in building lasting partnerships that create value for all stakeholders.
-              </p>
-              <div className="grid grid-cols-2 gap-6">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center p-4 bg-blue-50 rounded-lg">
-                    <div className="text-3xl font-bold text-blue-600 mb-2">{stat.number}</div>
-                    <div className="text-gray-600 font-medium">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              Who We Are
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+          </div>
+          
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-xl lg:text-2xl text-gray-700 leading-relaxed mb-12">
+              Stylish Him Exim Is A Global Trade Partner With Headquarters In Delhi And A Strong Regional Presence Across Asia And Africa. We Specialize In Helping Businesses Export And Import With Ease, Combining Centralized Operations With Local Knowledge.
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+              {stats.map((stat, index) => (
+                <div key={index} className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                  <div className="text-gray-700 font-medium text-sm lg:text-base">{stat.label}</div>
+                </div>
+              ))}
             </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                alt="Global Trading Operations" 
-                className="w-full h-auto rounded-2xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-xl">
-                25+
+          </div>
+        </div>
+      </section>
+
+      {/* Our Strengths Section */}
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              Our Strengths
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              What sets us apart in the global trading landscape
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+            {strengths.map((strength, index) => (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                <div className="text-4xl mb-6">{strength.icon}</div>
+                <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4">{strength.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{strength.description}</p>
               </div>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Do Section */}
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              What We Do
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive services to streamline your global trade operations
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="group">
+                <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-blue-100">
+                  <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                  <p className="text-blue-600 font-semibold mb-4">{service.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.details}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-16 lg:py-24 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               What We Provide
             </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our diverse portfolio spans across multiple industries, ensuring we meet the varied needs of our global clientele with premium quality products.
             </p>
           </div>
 
-          <div className="grid gap-8 lg:gap-12">
+          <div className="grid gap-12 lg:gap-16">
             {products.map((product, index) => (
               <div key={product.id} className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-64 lg:h-80 object-cover rounded-2xl shadow-lg"
-                  />
+                  <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="w-full h-64 lg:h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
                 </div>
-                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} bg-white p-8 rounded-2xl shadow-lg`}>
                   <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                     {product.name}
                   </h3>
@@ -208,12 +311,13 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-white">
+      <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
               Our Core Values
             </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               These fundamental principles guide every decision we make and every relationship we build.
             </p>
@@ -221,7 +325,7 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="text-center p-6 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-blue-100">
                 <div className="text-4xl mb-4">{value.icon}</div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{value.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{value.description}</p>
@@ -231,37 +335,50 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Meet Our Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced team brings decades of expertise in global trade, logistics, and business development.
-            </p>
-          </div>
+ {/* Team Section */}
+<section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-white">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+        Our Global Team
+      </h2>
+      <div className="w-20 h-1 bg-blue-600 mx-auto mb-8"></div>
+      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our dedicated regional officers connect us with businesses worldwide, ensuring local expertise with global reach.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="text-center group">
-                <div className="relative mb-6">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300"
-                  />
-                  <div className="absolute inset-0 w-32 h-32 rounded-full mx-auto bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-blue-600 font-medium mb-2">{member.position}</p>
-                <p className="text-gray-600 text-sm">{member.experience}</p>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {[
+        { name: "Omar Rahman", position: "Regional Sales Officer", location: "Dubai" },
+        { name: "Nguyen Thanh Hai", position: "Regional Sales Officer", location: "Vietnam" },
+        { name: "Somchai Rattanakorn", position: "Regional Sales Officer", location: "Thailand" },
+        { name: "Andry Rakoto", position: "Regional Sales Officer", location: "Madagascar" },
+        { name: "Jean Mbemba", position: "Regional Sales Officer", location: "Congo" },
+        { name: "David Mwangi", position: "Regional Sales Officer", location: "Kenya" },
+        { name: "Anil Beeharry", position: "Regional Sales Officer", location: "Mauritius" },
+      ].map((member, index) => (
+        <div
+          key={index}
+          className="text-center group bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+        >
+          <div className="relative mb-6">
+            <img
+              src={`https://via.placeholder.com/150`} // Replace with actual team member images
+              alt={member.name}
+              className="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300"
+            />
+            <div className="absolute inset-0 w-32 h-32 rounded-full mx-auto bg-blue-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
           </div>
+          <h3 className="text-xl font-bold text-gray-900 mb-2">{member.name}</h3>
+          <p className="text-blue-600 font-medium mb-1">{member.position}</p>
+          <p className="text-gray-600 text-sm">{member.location}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Call to Action */}
       <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 text-white">
@@ -270,7 +387,7 @@ const About = () => {
             Ready to Partner With Us?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join thousands of satisfied clients worldwide who trust StylishHim Pvt Ltd. for their commodity trading needs.
+            Join thousands of satisfied clients worldwide who trust Stylish Him Exim for their global trading needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="px-8 py-4 bg-white text-blue-900 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
